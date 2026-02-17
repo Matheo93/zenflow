@@ -7,6 +7,10 @@ import { useKeyboard } from "@/lib/use-keyboard";
 import { useSessionHistory } from "@/lib/use-session-history";
 import { haptics } from "@/lib/haptics";
 import { playBowl, playChime, playTick } from "@/lib/sounds";
+import {
+  requestNotificationPermission,
+  notifySessionComplete,
+} from "@/lib/notifications";
 import { ProgressRing } from "./progress-ring";
 import { TimerDisplay } from "./timer-display";
 import { BreathingGuide } from "./breathing-guide";
@@ -26,6 +30,7 @@ export function MeditationTimer() {
     haptics.success();
     playChime();
     addSession(duration);
+    notifySessionComplete(Math.floor(duration / 60));
   }, [addSession, duration]);
 
   const { remaining, state, progress, start, pause, reset } = useTimer(
@@ -41,6 +46,7 @@ export function MeditationTimer() {
     if (isIdle || state === "paused") {
       haptics.medium();
       playBowl();
+      if (isIdle) requestNotificationPermission();
       start();
     } else if (isActive) {
       haptics.tap();
