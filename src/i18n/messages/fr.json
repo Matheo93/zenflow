@@ -1,0 +1,27 @@
+{
+  "app": {
+    "name": "ZenFlow",
+    "tagline": "2 min · Respire · Reset · Flow"
+  },
+  "timer": {
+    "begin": "Commencer",
+    "pause": "Pause",
+    "resume": "Reprendre",
+    "reset": "Réinitialiser",
+    "newSession": "Nouvelle session",
+    "sessionComplete": "Session terminée"
+  },
+  "breathing": {
+    "inhale": "Inspirez",
+    "hold": "Retenez",
+    "exhale": "Expirez"
+  },
+  "a11y": {
+    "timerLabel": "{minutes} minutes {seconds} secondes restantes",
+    "startMeditation": "Démarrer la méditation",
+    "pauseSession": "Mettre en pause",
+    "resumeSession": "Reprendre la session",
+    "resetTimer": "Réinitialiser le timer",
+    "startNewSession": "Démarrer une nouvelle session"
+  }
+}

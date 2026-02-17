@@ -1,0 +1,27 @@
+{
+  "app": {
+    "name": "ZenFlow",
+    "tagline": "2 min · Breathe · Reset · Flow"
+  },
+  "timer": {
+    "begin": "Begin",
+    "pause": "Pause",
+    "resume": "Resume",
+    "reset": "Reset",
+    "newSession": "New Session",
+    "sessionComplete": "Session complete"
+  },
+  "breathing": {
+    "inhale": "Inhale",
+    "hold": "Hold",
+    "exhale": "Exhale"
+  },
+  "a11y": {
+    "timerLabel": "{minutes} minutes {seconds} seconds remaining",
+    "startMeditation": "Start meditation",
+    "pauseSession": "Pause session",
+    "resumeSession": "Resume session",
+    "resetTimer": "Reset timer",
+    "startNewSession": "Start new session"
+  }
+}
